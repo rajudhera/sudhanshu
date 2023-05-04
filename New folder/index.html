@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        *{box-sizing: border-box; margin: 0;padding: 0;}
+.container{
+    height: 800px;width: 100%;background: url(./backgound.avif); background-size: cover;
+}
+.outerdiv{
+    height: 200px;width: 300px;border-radius: 50%;
+position: relative;left: 100px;top: 100px;perspective: 800px;
+}
+.innerdiv{position:relative; height: 100%;width: 100%;transform-style: preserve-3d;transition: all 1s; 
+}
+.front, .back{
+    position: absolute;height: 100%;width: 100%;backface-visibility: hidden; border-radius: 50%;
+}
+.outerdiv:hover .innerdiv{
+    transform: rotateX(180deg);
+}
+.back{
+    transform: rotateX(180deg);text-align: center;background: black; border-radius: 50%;
+}
+.img{
+    border-radius: 50%;
+}
+.back h1{
+    font-size: 25px;color: white; padding: 30px; text-transform: uppercase; 
+}
+.back p{ font-size: 25px;
+    color: white; }
+    .outerdiva{
+        height: 200px;width: 300px;border-radius: 50%;
+    position: relative; perspective: 800px; top: 300px; left: 100px;
+    }
+    .innerdiva{position:relative; height: 100%;width: 100%;transform-style: preserve-3d;transition: all 1s; 
+    }
+    .fronta, .backa{
+        position: absolute;height: 100%;width: 100%;backface-visibility: hidden; border-radius: 50%;
+    }
+    .outerdiva:hover .innerdiva{
+        transform: rotateX(180deg);
+    }
+    .backa{
+        transform: rotateX(180deg);text-align: center;background: black; border-radius: 50%;
+    }
+    .imga{
+        border-radius: 50%;
+    }
+    .backa h1{
+        font-size: 25px;color: white; padding: 30px; text-transform: uppercase; 
+    }
+    .backa p{ font-size: 25px;
+        color: white; }
+        .outerdivb{
+            height: 200px;width: 300px;border-radius: 50%;
+        position: relative; perspective: 800px; top: ; left: 600px; 
+        }
+        .innerdivb{position:relative; height: 100%;width: 100%;transform-style: preserve-3d;transition: all 1s; 
+        }
+        .frontb, .backb{
+            position: absolute;height: 100%;width: 100%;backface-visibility: hidden; border-radius: 50%;
+        }
+        .outerdivb:hover .innerdivb{
+            transform: rotateX(180deg);
+        }
+        .backb{
+            transform: rotateX(180deg);text-align: center;background: black; border-radius: 50%;
+        }
+        .imgb{
+            border-radius: 50%;
+        }
+        .backb h1{
+            font-size: 25px;color: white; padding: 30px; text-transform: uppercase; 
+        }
+        .backb p{ font-size: 25px;
+            color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="outerdiv">
+            <div class="innerdiv">
+                <div class="front"><img src="./bridal.jfif" height="200px" width="300px" class="img"></div>
+                <div class="back"><h1>geeta makeover</h1><p>best in services</p></div>
+            </div>
+        </div>
+        <div class="outerdiva">
+            <div class="innerdiva">
+                <div class="fronta"><img src="./bridal.jfif" height="200px" width="300px" class="imga"></div>
+                <div class="backa"><h1>geeta makeover</h1><p>best in services</p></div>
+            </div>
+        </div>
+        <div class="outerdivb">
+            <div class="innerdivb">
+                <div class="frontb"><img src="./bridal.jfif" height="200px" width="300px" class="imgb"></div>
+                <div class="backb"><h1>geeta makeover</h1><p>best in services</p></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
